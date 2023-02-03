@@ -12,7 +12,7 @@ import org.json.JSONObject;
 
 import android.content.Intent;
 import android.util.Log;
-import com.sunmi.printerhelper;
+// import com.sunmi.printerhelper;
 
 // Needed only for fake API calls
 import java.util.HashMap;
