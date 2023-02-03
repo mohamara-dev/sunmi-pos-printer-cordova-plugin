@@ -12,7 +12,7 @@ import org.json.JSONObject;
 
 import android.content.Intent;
 import android.util.Log;
-// import com.sunmi.printerhelper;
+import com.sunmi.printerhelper;
 
 // Needed only for fake API calls
 import java.util.HashMap;
@@ -197,14 +197,14 @@ public class sunmiPOSPrinter extends CordovaPlugin {
 
 	public void printBitmap(String message) {
 
-		// Intent intentPrinter = new Intent(this.cordova.getActivity().getBaseContext(), PrinterActivity.class);
-		// // intentPrinter.setAction(Intents.Print.ACTION);
-		// intentPrinter.putExtra("action", "1");
-		// intentPrinter.putExtra("message", message);
-		// // avoid calling other phonegap apps
-		// intentPrinter.setPackage(this.cordova.getActivity().getApplicationContext().getPackageName());
+		Intent intentPrinter = new In
+		// ent(this.cordova.getActivity().getBaseContext(), PrinterActivity.class);
+		// intentPrinter.setAction(Intents.Print.ACTION);
+		intentPrinter.putExtra("message", message);
+		// avoid calling other phonegap apps
+		intentPrinter.setPackage(this.cordova.getActivity().getApplicationContext().getPackageName());
 
-		// this.cordova.getActivity().startActivity(intentPrinter);
+		this.cordova.getActivity().startActivity(intentPrinter);
 	}
 
 	public void printQr(String message) {
