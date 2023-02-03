@@ -1,0 +1,25 @@
+{
+  "name": "org.cordova.plugin.sunmi.sunmiposprinter",
+  "version": "0.0.2",
+  "description": "cordova plugin for sunmi v2s POS device printer",
+  "cordova": {
+    "id": "org.cordova.plugin.sunmi.sunmiposprinter",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamara/sunmi-pos-printer-cordova-plugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "mohamara",
+  "license": "apache 2",
+  "bugs": {
+    "url": "https://github.com/mohamara/sunmi-pos-printer-cordova-plugin/issues"
+  },
+  "homepage": "https://github.com/mohamara/sunmi-pos-printer-cordova-plugin#readme"
+}

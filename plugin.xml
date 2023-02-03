@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="org.cordova.plugin.urovo.posprinter" version="0.0.1">
+   <name>POSPrinter</name>
+     <license>MIT</license>
+  <repo>https://github.com/mohamara/urovo-pos-printer-cordova-plugin</repo>
+  <issue>https://github.com/mohamara/urovo-pos-printer-cordova-plugin/issues</issue>
+  <engines>
+    <engine name="cordova" version=">=7.1.0"/>
+    <engine name="cordova-android" version=">=6.3.0"/>
+  </engines>
+   <js-module name="sunmiPOSPrinter" src="www/sunmiPOSPrinter.js">
+      <clobbers target="cordova.plugins.sunmiPOSPrinter" />
+   </js-module>
+   <platform name="android">
+      <source-file src="src/android/org/cordova/plugins/sunmiposPrinter/sunmiPOSPrinter.java" target-dir="src/org/cordova/plugins/sunmi/sunmiposprinter" />
+      <config-file target="res/xml/config.xml" parent="/*" >
+         <feature name="sunmiPOSPrinter">
+            <param name="android-package" value="org.cordova.plugin.sunmi.sunmiposprinter.sunmiPOSPrinter" />
+         </feature>
+      </config-file>
+      <config-file target="AndroidManifest.xml" parent="/manifest/application">
+         <activity android:name="com.sunmi.printerhelper" android:label="Printer"/>
+      </config-file>
+      <config-file parent="/*" target="AndroidManifest.xml" />
+      <framework src="src/android/sunmiPOSPrinter.gradle" custom="true" type="gradleReference"/>
+    <framework src="com.android.support:support-v4:$ANDROID_SUPPORT_V4_VERSION"/>
+    <lib-file src="src/android/sumni-connector.aar"/>
+    <preference name="ANDROID_SUPPORT_V4_VERSION" default="27.+"/>
+   </platform>
+</plugin>
+
+ 
