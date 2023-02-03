@@ -24,7 +24,7 @@
       <config-file parent="/*" target="AndroidManifest.xml" />
       <framework src="src/android/sunmiPOSPrinter.gradle" custom="true" type="gradleReference"/>
     <framework src="com.android.support:support-v4:$ANDROID_SUPPORT_V4_VERSION"/>
-    <lib-file src="src/android/sumni-connector.aar"/>
+    <lib-file src="src/android/sunmi-connector.aar"/>
     <preference name="ANDROID_SUPPORT_V4_VERSION" default="27.+"/>
    </platform>
 </plugin>
