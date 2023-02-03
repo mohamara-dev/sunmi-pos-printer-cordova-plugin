@@ -12,14 +12,14 @@
       <clobbers target="cordova.plugins.sunmiPOSPrinter" />
    </js-module>
    <platform name="android">
-      <source-file src="src/android/org/cordova/plugins/sunmiposPrinter/sunmiPOSPrinter.java" target-dir="src/org/cordova/plugins/sunmi/sunmiposprinter" />
+      <source-file src="src/android/org/cordova/plugins/sunmiposPrinter/sunmiPOSPrinter.java" target-dir="src/org/cordova/plugins/sunmiposPrinter" />
       <config-file target="res/xml/config.xml" parent="/*" >
          <feature name="sunmiPOSPrinter">
             <param name="android-package" value="org.cordova.plugin.sunmi.sunmiposprinter.sunmiPOSPrinter" />
          </feature>
       </config-file>
       <config-file target="AndroidManifest.xml" parent="/manifest/application">
-         <activity android:name="com.sunmi.printerhelper" android:label="Printer"/>
+         <activity android:name="com.sunmi.printerhelper.MainActivity" android:label="Printer"/>
       </config-file>
       <config-file parent="/*" target="AndroidManifest.xml" />
       <framework src="src/android/sunmiPOSPrinter.gradle" custom="true" type="gradleReference"/>
