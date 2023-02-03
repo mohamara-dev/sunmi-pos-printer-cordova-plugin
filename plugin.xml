@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="org.cordova.plugin.urovo.posprinter" version="0.0.1">
-   <name>POSPrinter</name>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="org.cordova.plugin.sunmi.sunmiposprinter" version="0.0.1">
+   <name>sunmiPOSPrinter</name>
      <license>MIT</license>
-  <repo>https://github.com/mohamara/urovo-pos-printer-cordova-plugin</repo>
-  <issue>https://github.com/mohamara/urovo-pos-printer-cordova-plugin/issues</issue>
+  <repo>https://github.com/mohamara-dev/sunmi-pos-printer-cordova-plugin</repo>
+  <issue>https://github.com/mohamara-dev/sunmi-pos-printer-cordova-plugin/issues</issue>
   <engines>
     <engine name="cordova" version=">=7.1.0"/>
     <engine name="cordova-android" version=">=6.3.0"/>
