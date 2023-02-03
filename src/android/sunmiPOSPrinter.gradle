@@ -6,7 +6,7 @@ repositories{
 }
 
 dependencies {
-    compile(name:'sumni-connector', ext:'aar')
+    compile(name:'sunmi-connector', ext:'aar')
 
 }
 
