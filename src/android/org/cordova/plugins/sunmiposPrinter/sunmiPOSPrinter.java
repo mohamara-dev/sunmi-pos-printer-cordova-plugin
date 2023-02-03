@@ -173,61 +173,61 @@ public class sunmiPOSPrinter extends CordovaPlugin {
 
 	public void print(String action, String message) {
 
-		Intent intentPrinter = new Intent(this.cordova.getActivity().getBaseContext(), PrinterActivity.class);
-		// intentPrinter.setAction(Intents.Print.ACTION);
-		intentPrinter.putExtra("action", action);
-		intentPrinter.putExtra("message", message);
-		// avoid calling other phonegap apps
-		intentPrinter.setPackage(this.cordova.getActivity().getApplicationContext().getPackageName());
+		// Intent intentPrinter = new Intent(this.cordova.getActivity().getBaseContext(), PrinterActivity.class);
+		// // intentPrinter.setAction(Intents.Print.ACTION);
+		// intentPrinter.putExtra("action", action);
+		// intentPrinter.putExtra("message", message);
+		// // avoid calling other phonegap apps
+		// intentPrinter.setPackage(this.cordova.getActivity().getApplicationContext().getPackageName());
 
-		this.cordova.getActivity().startActivity(intentPrinter);
+		// this.cordova.getActivity().startActivity(intentPrinter);
 	}
 
 	public void printText(String message) {
 
-		Intent intentPrinter = new Intent(this.cordova.getActivity().getBaseContext(), PrinterActivity.class);
-		// intentPrinter.setAction(Intents.Print.ACTION);
-		intentPrinter.putExtra("action", "0");
-		intentPrinter.putExtra("message", message);
-		// avoid calling other phonegap apps
-		intentPrinter.setPackage(this.cordova.getActivity().getApplicationContext().getPackageName());
+		// Intent intentPrinter = new Intent(this.cordova.getActivity().getBaseContext(), PrinterActivity.class);
+		// // intentPrinter.setAction(Intents.Print.ACTION);
+		// intentPrinter.putExtra("action", "0");
+		// intentPrinter.putExtra("message", message);
+		// // avoid calling other phonegap apps
+		// intentPrinter.setPackage(this.cordova.getActivity().getApplicationContext().getPackageName());
 
-		this.cordova.getActivity().startActivity(intentPrinter);
+		// this.cordova.getActivity().startActivity(intentPrinter);
 	}
 
 	public void printBitmap(String message) {
 
-		Intent intentPrinter = new Intent(this.cordova.getActivity().getBaseContext(), PrinterActivity.class);
-		// intentPrinter.setAction(Intents.Print.ACTION);
-		intentPrinter.putExtra("action", "1");
-		intentPrinter.putExtra("message", message);
-		// avoid calling other phonegap apps
-		intentPrinter.setPackage(this.cordova.getActivity().getApplicationContext().getPackageName());
+		// Intent intentPrinter = new Intent(this.cordova.getActivity().getBaseContext(), PrinterActivity.class);
+		// // intentPrinter.setAction(Intents.Print.ACTION);
+		// intentPrinter.putExtra("action", "1");
+		// intentPrinter.putExtra("message", message);
+		// // avoid calling other phonegap apps
+		// intentPrinter.setPackage(this.cordova.getActivity().getApplicationContext().getPackageName());
 
-		this.cordova.getActivity().startActivity(intentPrinter);
+		// this.cordova.getActivity().startActivity(intentPrinter);
 	}
 
 	public void printQr(String message) {
 
-		Intent intentPrinter = new Intent(this.cordova.getActivity().getBaseContext(), PrinterActivity.class);
-		// intentPrinter.setAction(Intents.Print.ACTION);
-		intentPrinter.putExtra("action", "2");
-		intentPrinter.putExtra("message", message);
-		// avoid calling other phonegap apps
-		intentPrinter.setPackage(this.cordova.getActivity().getApplicationContext().getPackageName());
+		// Intent intentPrinter = new Intent(this.cordova.getActivity().getBaseContext(), PrinterActivity.class);
+		// // intentPrinter.setAction(Intents.Print.ACTION);
+		// intentPrinter.putExtra("action", "2");
+		// intentPrinter.putExtra("message", message);
+		// // avoid calling other phonegap apps
+		// intentPrinter.setPackage(this.cordova.getActivity().getApplicationContext().getPackageName());
 
-		this.cordova.getActivity().startActivity(intentPrinter);
+		// this.cordova.getActivity().startActivity(intentPrinter);
 	}
 
 	public void paperFeedForward() {
 
-		Intent intentPrinter = new Intent(this.cordova.getActivity().getBaseContext(), PrinterActivity.class);
-		// intentPrinter.setAction(Intents.Print.ACTION);
-		intentPrinter.putExtra("action", "3");
-		intentPrinter.putExtra("message", "");
-		// avoid calling other phonegap apps
-		intentPrinter.setPackage(this.cordova.getActivity().getApplicationContext().getPackageName());
+		// Intent intentPrinter = new Intent(this.cordova.getActivity().getBaseContext(), PrinterActivity.class);
+		// // intentPrinter.setAction(Intents.Print.ACTION);
+		// intentPrinter.putExtra("action", "3");
+		// intentPrinter.putExtra("message", "");
+		// // avoid calling other phonegap apps
+		// intentPrinter.setPackage(this.cordova.getActivity().getApplicationContext().getPackageName());
 
-		this.cordova.getActivity().startActivity(intentPrinter);
+		// this.cordova.getActivity().startActivity(intentPrinter);
 	}
 }
