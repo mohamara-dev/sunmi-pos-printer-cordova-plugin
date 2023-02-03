@@ -197,7 +197,8 @@ public class sunmiPOSPrinter extends CordovaPlugin {
 
 	public void printBitmap(String message) {
 
-		Intent intentPrinter = new In
+		Intent intentPrinter = new Intent(this.cordova.getActivity().getBaseContext(), PrinterActivity.class);
+
 		// ent(this.cordova.getActivity().getBaseContext(), PrinterActivity.class);
 		// intentPrinter.setAction(Intents.Print.ACTION);
 		intentPrinter.putExtra("message", message);
