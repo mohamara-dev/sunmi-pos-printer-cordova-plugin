@@ -1,4 +1,3 @@
-cordova.define("org.cordova.plugin.sunmi.sunmiposprinter.sunmiPOSPrinter", function (require, exports, module) {
     var exec = require('cordova/exec')
 
     function PosPrinter() {
@@ -13,7 +12,7 @@ cordova.define("org.cordova.plugin.sunmi.sunmiposprinter.sunmiPOSPrinter", funct
             function (err) {
                 error(err)
             },
-            'POSPrinter', mainAction, [action, message])
+            'sunmiPOSPrinter', mainAction, [action, message])
     }
 
     PosPrinter.prototype.printerMini = function (mainAction, action, message) {
@@ -25,12 +24,11 @@ cordova.define("org.cordova.plugin.sunmi.sunmiposprinter.sunmiPOSPrinter", funct
             function (err) {
                 alert(err)
             },
-            'POSPrinter', mainAction, [action, message])
+            'sunmiPOSPrinter', mainAction, [action, message])
     }
 
 
     var posPrinter = new PosPrinter()
     module.exports = posPrinter
 
-})
 

@@ -6,7 +6,7 @@ repositories{
 }
 
 dependencies {
-    compile(name:'sunmi-connector', ext:'aar')
+    compile(name:'app-release', ext:'aar')
 
 }
 

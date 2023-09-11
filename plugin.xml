@@ -19,14 +19,13 @@
          </feature>
       </config-file>
       <config-file target="AndroidManifest.xml" parent="/manifest/application">
-         <activity android:name="com.sunmi.printerhelper.MainActivity" android:label="Printer"/>
+         <activity android:name="com.sunmi.printerhelper.activity.MainActivity" android:label="Printer"/>
       </config-file>
       <config-file parent="/*" target="AndroidManifest.xml" />
       <framework src="src/android/sunmiPOSPrinter.gradle" custom="true" type="gradleReference"/>
     <framework src="com.android.support:support-v4:$ANDROID_SUPPORT_V4_VERSION"/>
-    <lib-file src="src/android/sunmi-connector.aar"/>
+    <lib-file src="src/android/app-release.aar"/>
     <preference name="ANDROID_SUPPORT_V4_VERSION" default="27.+"/>
    </platform>
 </plugin>
 
- 
